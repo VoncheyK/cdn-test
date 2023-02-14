@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload</title>
+</head>
+<body>
+  <h1>File Upload Form</h1>
+  <form id="uploadForm" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+    <input type="submit" value="Upload File" onclick="uploadFile()">
+  </form>
+  <p id="uploadStatus"></p>
+  <script src="upload.js"></script>
+</body>
+</html>
