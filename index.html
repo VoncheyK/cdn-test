@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>File Upload</title>
+  <title>xrat</title>
+  <style>
+    body {
+      align-items: center;
+      background-color: #070810;
+
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+      font-weight:lighter;
+      color: #FFF;
+    }
+
+    .items {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 35px;
+
+
+      text-align: center;
+      width: 600px;
+      height: 500px;
+      background-color: #0b0c17;
+    }
+  </style>
 </head>
 <body>
-  <h1>File Upload Form</h1>
-  <form id="uploadForm" method="post" enctype="multipart/form-data" netlify>
-    <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
-    <input type="submit" value="Upload File" onclick="uploadFile()">
-  </form>
-  <p id="uploadStatus"></p>
-  <script src="upload.js"></script>
+  <div class="items">
+    <h1>Upload</h1>
+    <form id="uploadForm" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+      <input type="submit" value="Upload File" onclick="uploadFile()">
+    </form>
+    <p id="uploadStatus"></p>
+    <script src="upload.js"></script>
+  </div>
+
 </body>
 </html>
