@@ -29,12 +29,11 @@
 </head>
 <body>
   <div class="items">
-    <h1>Upload</h1>
-    <form id="uploadForm" method="post" enctype="multipart/form-data">
-      <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
-      <input type="submit" value="Upload File" onclick="uploadFile()">
+    <form>
+      <input type="file" id="file-input">
+      <button type="submit" id="submit-btn">Upload</button>
     </form>
-    <p id="uploadStatus"></p>
+    
     <script src="upload.js"></script>
   </div>
 
